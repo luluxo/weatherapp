@@ -20,7 +20,7 @@ let weather = {
         document.querySelector(".icon").src = 
            "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").textContent = description;
-        document.querySelector(".temp").textContent = temp + "°F";
+        document.querySelector(".temp").textContent = Math.floor(temp) + "°F";
         document.querySelector(".humidity").textContent =  
             "Humidity: " + humidity + "%";
         document.querySelector(".wind").textContent = 
